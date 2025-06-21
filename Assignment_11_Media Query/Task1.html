@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: #ececec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header p {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        @media only screen and (max-width:600px) {
+            header {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Responsive Header</p>
+    </header>
+    <main>
+        <p>Main Content </p>
+    </main>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>

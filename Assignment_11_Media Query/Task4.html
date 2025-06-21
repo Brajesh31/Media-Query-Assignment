@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 60%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .container div {
+            width: 300px;
+            height: 150px;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        .green{
+            background-color: green;
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .orange{
+            background-color: orange;
+        }
+        @media only screen and (max-width:768px){
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media only screen and (max-width:500px){
+            .container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red">Box1</div>
+        <div class="green">Box2</div>
+        <div class="blue">Box3</div>
+        <div class="orange">Box4</div>
+        
+    </div>
+</body>
+</html>
